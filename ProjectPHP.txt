@@ -1,0 +1,30 @@
+Tarea
+
+crear un formulario de registro que pido nombre apellido dob email password. 
+
+Este formulario debe tener validacion en front end y back end (html y php)
+
+Esta informacion una vez que comprobemos que todo esta bien, 
+deber sewr guardado en una base de datos. 
+
+Ademas de esto, crear una vista donde se pueda visualizar todos
+los usuarios (nombre apellido dob email) en mi base de datos
+
+Opcional: hacer un formulario envie un correo una vez llenado
+y validada la informacion
+
+
+Creation of database table
+
+CREATE TABLE users (
+	ID BIGINT(255) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255),
+    lastname VARCHAR(255),
+    dob DATE(YYYY-MM-DD),    
+    email VARCHAR(255),
+    password VARCHAR(255),
+    comment VARCHAR(1500),
+    gender VARCHAR (10)
+    create_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (userID)
+)

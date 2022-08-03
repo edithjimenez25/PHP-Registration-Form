@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: arial, sans-serif, helvetica;
+}
+
+/*HEADER*/
+
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #01143F;
+    width: 100%;
+}
+
+/* Navigation links */
+.home {
+    float: left;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.right-nav {
+    float: right;
+}
+
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+/* background and font color to navigation links on hover */
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 50;
+    background-color: whitesmoke;
+    width: 200px;
+    z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+    float: right;
+    color: red;
+    text-decoration: none;
+    display: block;
+    width: 168px;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+    background-color: #eee;
+    color: blue;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.subnav a.active {
+    background-color: rgb(255, 192, 0);
+    /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+.second-header {
+    overflow: hidden;
+    background-color: rgb(255, 192, 0);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+
+}
+
+
+/*END OF HEADER*/
+
+/*MAIN*/
+
+.container {
+    margin-bottom: 25px;
+
+}
+
+/*landing page*/
+.image {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+    background-position: right top;
+
+    height: auto;
+    max-width: 165%
+}
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 150px;
+    color: black;
+    font-weight: bold;
+    height: auto;
+    text-shadow: 1px 1px grey;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 500px;
+    color: black;
+    font-weight: bold;
+    height: auto;
+    text-shadow: 1px 1px grey;
+}
+
+div.text {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.text {
+    margin-top: 50px;
+    text-align: left;
+}
+
+.text1 {
+    text-align: left;
+}
+
+.text2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.article {
+    margin-top: 50px;
+}
+
+
+.container1 {
+    padding-left: 300px;
+}
+
+/*End of landing page*/
+
+/*CLOUDINESS PAGE*/
+
+.article {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.secondimg {
+    width: 600px;
+    height: auto;
+}
+
+.visualization {
+    width: 400px;
+    height: auto;
+    margin-left: 100px;
+}
+
+/* RESPONSIVE ------------------------*/
+@media screen and (max-width: 600px) {
+
+    .navbar {
+
+        background-color: rgb(32, 56, 100);
+        width: 100%;
+    }
+
+    .secondimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .visualization {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+}
+
+.article p {
+    font-size: 15px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+
+
+/*END OF CLOUDINESS*/
+
+/*COMPARISON PAGE*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.leftrow {
+    margin-left: 20%;
+}
+
+/* END OF COMPARISON PAGE*/
+
+/*DATA PAGE*/
+
+
+.datarow h1,
+p {
+    text-align: center;
+    margin-top: 25px
+}
+
+table {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 16px;
+    border: 10px solid lightskyblue collapse;
+    border-style: solid;
+    border-collapse: collapse;
+    border-radius: 6px;
+    background-color: GhostWhite;
+}
+
+thead {
+    border: 2px solid dodgerblue;
+}
+
+th {
+    border: 2px solid dodgerblue;
+}
+
+tr {
+    border: 1px solid dodgerblue;
+}
+
+tbody {
+    border: 2px solid dodgerblue;
+}
+
+/*PLOT PAGE*/
+
+.container2 {
+    padding-left: 15px;
+    margin-right: 0;
+    margin-left: 100px;
+
+}
+
+
+.containerR {
+    padding-left: 15px;
+    margin-right: 0;
+    margin-left: 15px;
+    margin-top: 20px
+}
+
+.sidebar {
+    /*column-count: 2;*/
+    float: right;
+    margin-left: -200px;
+}
+
+
+.row2 {
+    /* margin-left: px;
+    margin-right: -15px;*/
+    display: block;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.col-md-1,
+.col-md-2,
+.col-md-3 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 15px;
+}
+
+.selected {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #061e5c;
+}
+
+.col-md-1 {
+    margin-right: 350px;
+    margin-top: 5px;
+}
+
+.col-md-1 img {
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.col-md-1 p {
+    margin-top: 10px;
+}
+
+.col-md-2 h1 {
+    margin-bottom: 30px;
+}
+
+.col-md-3 {
+    width: 100%;
+    height: auto;
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .container2 {
+        width: 750px;
+    }
+
+    .col-md-1,
+    .col-md-2,
+    .col-md-3 {
+        float: left;
+    }
+
+    .col-md-1 {
+        width: 50%;
+    }
+}
